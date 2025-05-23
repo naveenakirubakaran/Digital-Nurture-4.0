@@ -1,0 +1,20 @@
+<script>
+  function findLocation() {
+    if (!navigator.geolocation) {
+      alert("Geolocation not supported.");
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const coords = `Latitude: ${pos.coords.latitude}, Longitude: ${pos.coords.longitude}`;
+        document.getElementById("locationDisplay").textContent = coords;
+      },
+      (err) => alert("Error: " + err.message),
+      { enableHighAccuracy: true, timeout: 5000 }
+    );
+  }
+</script>
+
+<button onclick="findLocation()">Find Nearby Events</button>
+<div id="locationDisplay"></div>
