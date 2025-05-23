@@ -26,7 +26,7 @@ public class GuessNumber {
     }
 }
 
-##Output
+## Output
 Guess the number between 1 and 100
 Enter your guess: 50
 Too low! Try again.
