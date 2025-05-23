@@ -16,8 +16,8 @@ public class HelloWorld {
 
   public static void main(java.lang.String[]);  
     Code:  
-       0: getstatic     #2 // Field java/lang/System.out:Ljava/io/PrintStream;  
-       3: ldc           #3 // String Hello, World!  
-       5: invokevirtual #4 // Method java/io/PrintStream.println:(Ljava/lang/String;)V  
+       0: getstatic     #2 
+       3: ldc           #3  
+       5: invokevirtual #4   
        8: return  
 }
