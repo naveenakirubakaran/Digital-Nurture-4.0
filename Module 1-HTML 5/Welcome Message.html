@@ -1,16 +1,41 @@
-<style>
-  #welcomeBanner {
-    background-color: blue;
-    color: white;
-    padding: 10px;
-  }
-  .highlight {
-    background-color: yellow;
-    font-weight: bold;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Banner</title>
+  <style>
+    #welcomeBanner {
+      background-color: blue;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
 
-<div id="welcomeBanner">
-  Welcome back, <span class="highlight">Naveena</span>! 
-  <span style="color: red; font-weight: bold;">Special Offer: Free Entry Today!</span>
-</div>
+    .highlight {
+      background-color: yellow;
+      padding: 10px;
+      display: inline-block;
+    }
+
+    .special-offer {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Welcome Banner -->
+  <div id="welcomeBanner">
+    <h1>Welcome Back, User!</h1>
+    <div class="highlight">We're glad to see you again.</div>
+  </div>
+
+  <!-- Special Offer -->
+  <p>Enjoy our special offer: <span class="special-offer">50% OFF today only!</span></p>
+
+  <!-- Highlighted Message -->
+  <p class="highlight">Don't miss out on our latest updates.</p>
+
+</body>
+</html>
