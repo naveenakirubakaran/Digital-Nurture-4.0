@@ -4,3 +4,8 @@ JOIN Feedback f ON e.event_id = f.event_id
 GROUP BY e.event_id
 HAVING COUNT(f.feedback_id) >= 10
 ORDER BY avg_rating DESC;
+
+Output
+| event\_id   | event\_title | avg\_rating | total\_feedbacks |
+| ----------- | ------------ | ----------- | ---------------- |
+|  |              |             |                  |
