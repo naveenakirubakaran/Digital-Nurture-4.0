@@ -1,6 +1,16 @@
-ELECT *
+SELECT *
 FROM Users
 WHERE user_id NOT IN (
     SELECT user_id FROM Registrations
     WHERE registration_date >= CURDATE() - INTERVAL 90 DAY
 );
+
+
+Output
+| registration_id | user_id | event_id | registration_date |
+| ---------------- | -------- | --------- | ------------------ |
+| 1                | 1        | 1         | 2025-05-01         |
+| 2                | 2        | 1         | 2025-05-02         |
+| 3                | 3        | 2         | 2025-04-30         |
+| 4                | 4        | 2         | 2025-04-28         |
+| 5                | 5        | 3         | 2025-06-15         |
