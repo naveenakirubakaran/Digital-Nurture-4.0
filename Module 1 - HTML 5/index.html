@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Community Event Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/regular.min.css"
+    integrity="sha512-8hM9a+2hrLBhOuB3uiy+QIXBsu6Qk+snsP1CboFQW6pdt/yYz0IcDp/+CGv5m39r9doGUc/zw6aBpyLF6XFgzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+        <h1>Local Community Event Portal</h1>
+      <div class="navbar-links">
+        <p class="navbar-link"><a href="">Home</a></p>
+        <p class="navbar-link"><a href="">Collections</a></p>
+        <p class="navbar-link"><a href="">Contact</a></p>
+      </div>
+  </nav>
+
+
+  <main>
+
+    <div id="welcomeBanner">
+      <h1>Welcome to the Community Portal</h1>
+      <p>Exclusive Offer: <span style="color: red; font-weight: bold;">Free Entry</span> for the first 100 registrants!
+      </p>
+    </div>
+
+
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <table>
+        <caption>Community Events Gallery</caption>
+        <tr>
+          <td><img
+              src="https://cdn.shopify.com/s/files/1/0445/3321/9490/files/happy-people-dance-nightclub-party-concert_480x480.jpg?v=1686381835"
+              alt="Music Festival" title="Music Festival" class="eventImage" width="300px" height="200px" /></td>
+          <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-DtSnD1VubiIMs0_yY5HaC0POc5lQa2WAtw&s"
+              alt="Art Exhibition" title="Art Exhibition" class="eventImage" /></td>
+          <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStZ07afzqFFbWOuAxIreCpmPt7tJlZV2hgcA&s"
+              alt="Food Fair" title="Food Fair" class="eventImage" /></td>
+        </tr>
+        <tr>
+          <td><img
+              src="https://assets-chicagomarathon-com.s3.amazonaws.com/wp-content/uploads/2024/12/Runner-information-700x225.jpg"
+              alt="Marathon" title="Marathon" class="eventImage" width="300px" height="200px" /></td>
+          <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkzl9TDsmHXs0wEAqZ4d_50VcvaVsEPoUp-w&s"
+              alt="Book Reading" title="Book Reading" class="eventImage" /></td>
+          <td><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0FnPMtk9WzV04PFV8IebyV0t5OqrIeM8DsVp1a8F51xPXHOarV2d3Yr5M2UJYSqQUWpE&usqp=CAU"
+              alt="Charity Auction" title="Charity Auction" class="eventImage" /></td>
+        </tr>
+      </table>
+    </section>
+
+
+    <section id="registration">
+      <h2>Register for an Event</h2>
+      <form id="registrationForm">
+        <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required autofocus />
+        </div>
+
+        <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required />
+        </div>
+        <div>
+
+        <label for="eventType">Event Type:</label>
+        <select id="eventType" name="eventType" required>
+          <option value="">Select an event</option>
+          <option value="music">Music Festival</option>
+          <option value="art">Art Exhibition</option>
+          <option value="food">Food Fair</option>
+        </select></div>
+        <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Any special requests?"></textarea>
+        </div>
+        <div>
+
+        <button type="submit" id="registerBtn">Register</button>
+        <output id="confirmationMessage"></output>
+        </div>
+      </form>
+    </section>
+
+
+    <section id="videoInvite">
+      <h2>Event Promo</h2>
+      <video id="promoVideo" width="600" controls>
+        <source src="videos/promo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p id="videoStatus"></p>
+    </section>
+
+
+    <section id="geolocation">
+      <h2>Find Nearby Events</h2>
+      <button id="findEventsBtn">Find Nearby Events</button>
+      <p id="locationOutput"></p>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 Local Community Council</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
