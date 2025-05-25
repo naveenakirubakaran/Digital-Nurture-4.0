@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:large;
+}
+
+/* Navigation */
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    box-shadow: rgba(186, 33, 168, 0.25) 0px 30px 60px -12px inset, rgba(215, 8, 8, 0.3) 0px 18px 36px -18px inset;
+  }
+
+
+.navbar-links {
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: deeppink;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+    color: deeppink;
+}
+
+.navbar-menu-toggle {
+    display: none;
+}
+/* Welcome Banner */
+#welcomeBanner {
+  background-color: #add8e6;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Event Images */
+.eventImage {
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Registration Form */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+form label, form input, form select, form textarea, form button {
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .eventImage {
+    width: 100%;
+  }
+}
