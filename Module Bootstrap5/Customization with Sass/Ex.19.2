@@ -1,0 +1,19 @@
+Exercise 19.2: Customize primary colors and border radius via _variables.scss
+Instead of editing Bootstrap's core _variables.scss, override the variables in your own custom.scss before importing Bootstrap.
+
+scss
+Copy
+Edit
+$primary: #ff5722;       // Orange primary
+$success: #4caf50;       // Green success
+$border-radius: 1.5rem;  // Rounded corners
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+ Output Preview in HTML:
+html
+Copy
+Edit
+<div class="container mt-5">
+  <div class="alert alert-primary">Custom Primary Color</div>
+  <div class="btn btn-success rounded">Custom Success Button</div>
+</div>
