@@ -1,0 +1,52 @@
+Initialize project:
+
+bash
+Copy
+Edit
+mkdir bootstrap-sass-project
+cd bootstrap-sass-project
+npm init -y
+Install Bootstrap and Sass:
+
+bash
+Copy
+Edit
+npm install bootstrap sass
+Create folder structure:
+
+bash
+Copy
+Edit
+/scss
+  custom.scss
+/dist
+  style.css (will be generated)
+index.html
+Create custom.scss:
+
+scss
+Copy
+Edit
+// Import functions, variables, mixins first
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Optional: Override variables before importing full Bootstrap
+$primary: #6f42c1;
+$border-radius: 1rem;
+
+// Import the full Bootstrap library
+@import "../node_modules/bootstrap/scss/bootstrap";
+Compile SCSS to CSS:
+
+bash
+Copy
+Edit
+npx sass scss/custom.scss dist/style.css
+Link style.css in index.html:
+
+html
+Copy
+Edit
+<link rel="stylesheet" href="dist/style.css">
