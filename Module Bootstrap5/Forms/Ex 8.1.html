@@ -1,0 +1,26 @@
+Exercise 8.1: Registration form using form-control, form-check, and input-group
+
+<div class="container mt-4">
+  <h3>Register</h3>
+  <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">Full Name</label>
+      <input type="text" id="name" class="form-control" placeholder="Enter your name">
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <div class="input-group">
+        <span class="input-group-text">@</span>
+        <input type="email" id="email" class="form-control" placeholder="example@mail.com">
+      </div>
+    </div>
+
+    <div class="form-check mb-3">
+      <input type="checkbox" class="form-check-input" id="terms">
+      <label class="form-check-label" for="terms">Agree to terms</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+</div>
